@@ -7,14 +7,16 @@ function calculateResult() {
     let result = eval(container.innerHTML);
     container.innerHTML = result;
 }
+
 function deleteLast() {
     let container = document.getElementById("resultArea");
-    if (container.innerHTM.endsWith(`  `)) {
-        container.innerHTML = container.innerHTM.slice(0, -3);
+    if(container.innerHTML.endsWith(" ")){
+container.innerHTML=container.innerHTML.slice(0,-1);
     }
     else {
-        container.innerHTML = container.innerHTM.slice(0, -1);
+        container.innerHTML=container.innerHTML.slice(0,-1);
     }
+   
 
 }
 
